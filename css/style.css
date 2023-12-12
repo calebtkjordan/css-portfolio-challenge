@@ -137,13 +137,6 @@ p {
   text-decoration: underline; 
 }
 
-@media screen and (max-width: 600px) {
-  .contact-details {
-    flex-direction: column; 
-    align-items: flex-start;
-  }
-}
-
 /* Work */
 #categoryGrid {
   margin: 0px 5%;
@@ -208,6 +201,7 @@ p {
   font-size: 18px;
 }
 
+/* Media Queries */
 @media screen and (max-width: 768px) {
 
   .content-container {
@@ -254,5 +248,12 @@ p {
   
   h1, h2, h3, p {
     font-size: smaller; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-details {
+    flex-direction: column; 
+    align-items: flex-start;
   }
 }
