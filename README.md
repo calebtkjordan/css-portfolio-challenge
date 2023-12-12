@@ -9,7 +9,7 @@ Welcome to the repository for my personal portfolio page. This project is part o
 - Update and expand the portfolio as the course progresses, adding real projects in place of initial placeholders.
 
 ## Deployment
-The portfolio is deployed via GitHub Pages and can be viewed [here].
+The portfolio is deployed via GitHub Pages and can be viewed [here](https://calebtkjordan.github.io/css-portfolio-challenge/).
 
 
 ![Preview](images/preview.png)
