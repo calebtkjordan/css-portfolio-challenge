@@ -11,5 +11,8 @@ Welcome to the repository for my personal portfolio page. This project is part o
 ## Deployment
 The portfolio is deployed via GitHub Pages and can be viewed [here].
 
+
+![Preview](images/preview.png)
+
 ## Placeholder Images
 All images currently used in the portfolio are designed by me, created using AI (DALL-E 2) as placeholders. As I develop real projects, these placeholders will be replaced with actual work samples.
