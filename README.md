@@ -1,7 +1,7 @@
 # Caleb Jordan's Portfolio Page
 
 ## Overview
-Welcome to the repository for my personal portfolio page. This project is part of my journey through a front-end web development course, showcasing my growing skills in HTML and CSS. 
+Welcome to my portfolio repository, marking my progress at the end of Week 2 in a front-end web development course. This early stage project showcases foundational HTML and CSS skills, with planned updates as my learning progresses. 
 
 ## Project Objectives
 - Build a portfolio page to showcase skills and projects.
