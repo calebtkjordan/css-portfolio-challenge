@@ -1,0 +1,258 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-align: center;
+}
+
+h
+p {
+  margin: 0;
+}
+
+/* Nav Bar  */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5%;
+  background-color: #457B9D;
+  color: A8DADC;
+}
+#navBar h1 {
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  align-items: center;
+}
+#navigation a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+#navigation p:hover {
+  color: #9cd5ea;
+}
+
+/* Hero */
+
+.hero-banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-items: end;
+  justify-content: center;
+  min-height: 200px;
+  background-size: 130%;
+  background-image: url("../images/hero-pattern.png");
+
+}
+
+#hero-sub {
+  padding: 20px;
+}
+
+/* Main Content */
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.left-container {
+  width: 35%;
+}
+
+.work-section {
+  width: 60%;
+}
+
+#about {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#profile-pic {
+  max-width: 40%;
+  float: left;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px;
+  list-style: none;
+  padding: 0; 
+}
+
+.contact-details li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center; 
+}
+
+
+
+#contact-title {
+  margin: 50px;
+}
+
+.contact-details li {
+  padding: 5px 10px;
+}
+
+.contact-details li a {
+  text-decoration: none;
+  color: black; 
+}
+
+.contact-details li a:hover {
+  color: #0056b3; 
+  text-decoration: underline; 
+}
+
+@media screen and (max-width: 600px) {
+  .contact-details {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+}
+
+/* Work */
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 800px;
+  /* width: 80%;
+  margin-left: 20%; */
+  padding: 1%;
+  justify-content: center;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "wellness wellness wellness wellness"
+  "wellness wellness wellness wellness"
+  "ecom ecom tech tech"
+  "coffee coffee travel travel"
+  ;
+}
+
+#wellness {
+  grid-area: wellness;
+  background-image: url("../images/wellness.jpeg");
+
+}
+#ecom {
+  grid-area: ecom;
+  background-image: url("../images/ecom.jpeg");
+}
+
+#tech {
+  grid-area: tech;
+  background-image: url("../images/tech.jpeg");
+}
+
+#coffee {
+  grid-area: coffee;
+  background-image: url("../images/coffee.jpeg");
+}
+
+#travel {
+  grid-area: travel;
+  background-image: url("../images/travel.jpeg");
+}
+
+.categoryGridArea {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  border: 5px solid #A8DADC;
+  text-decoration: none;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  height: 25px;
+  color: white;
+  padding-bottom: 4%;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .left-container, .work-section {
+    width: 100%; 
+  }
+
+  #categoryGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "wellness"
+      "ecom"
+      "tech"
+      "coffee"
+      "travel"; 
+      grid-auto-rows: minmax(200px, auto);
+    }
+  
+    .categoryGridArea {
+      background-size: cover; 
+      background-position: top; 
+      display: flex;
+      align-items: flex-end; 
+      justify-content: center; 
+    }
+
+  #profile-pic {
+    max-width: 100%;
+    float: none; 
+  }
+
+  .contact-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; 
+  }
+
+  .contact-details li {
+    padding: 10px; 
+  }
+  
+  h1, h2, h3, p {
+    font-size: smaller; 
+  }
+}
